@@ -15,8 +15,8 @@
 
 # sed -i 's|PKG_VERSION:=0.*|PKG_VERSION:=0\.51\.3|g' feeds/packages/net/frp/Makefile
 # sed -i 's|PKG_HASH:=.*|PKG_HASH:=83032399773901348c660d41c967530e794ab58172ccd070db89d5e50d915fef|g' feeds/packages/net/frp/Makefile
-sed -i 's|PKG_BUILD_DEPENDS:=golang/host upx/host|PKG_BUILD_DEPENDS:=golang/host|g' feeds/packages/net/frp/Makefile
-sed -i 's|$(STAGING_DIR_HOST)/bin/upx.*||g' feeds/packages/net/frp/Makefile
+# sed -i 's|PKG_BUILD_DEPENDS:=golang/host upx/host|PKG_BUILD_DEPENDS:=golang/host|g' feeds/packages/net/frp/Makefile
+# sed -i 's|$(STAGING_DIR_HOST)/bin/upx.*||g' feeds/packages/net/frp/Makefile
 
-sed -i 's|LUCI_DEPENDS:=+wget|LUCI_DEPENDS:=+wget-ssl|g' feeds/luci/applications/luci-app-frpc/Makefile
-sed -i 's|LUCI_DEPENDS:=+wget|LUCI_DEPENDS:=+wget-ssl|g' feeds/luci/applications/luci-app-frps/Makefile
+# sed -i 's|LUCI_DEPENDS:=+wget|LUCI_DEPENDS:=+wget-ssl|g' feeds/luci/applications/luci-app-frpc/Makefile
+# sed -i 's|LUCI_DEPENDS:=+wget|LUCI_DEPENDS:=+wget-ssl|g' feeds/luci/applications/luci-app-frps/Makefile

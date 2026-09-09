@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Checkout build configuration
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Free disk space
         run: |
@@ -94,7 +94,7 @@ jobs:
 
       - name: Upload firmware
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: openwrt-${{ inputs.device }}-${{ inputs.openwrt_ref }}
           path: |
@@ -105,7 +105,7 @@ jobs:
 
       - name: Upload build metadata
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: build-metadata-${{ inputs.device }}-${{ inputs.openwrt_ref }}
           path: |
